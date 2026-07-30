@@ -130,6 +130,8 @@ export function buildInterviewPrep({
     [...selectedTerms].map((term) => term.trim().toLowerCase()),
   );
   const role = targetRole?.trim() || analysis.targetRole || "this position";
+  const roleReference =
+    role === "this position" ? "this position" : `the ${role} role`;
   const selectedKeywords = analysis.keywords.filter((keyword) =>
     selected.has(keyword.term.toLowerCase()),
   );
@@ -170,7 +172,7 @@ export function buildInterviewPrep({
     makeQuestion(
       "background",
       "Opening",
-      `Tell me about yourself and your background for this ${role} role.`,
+      `Tell me about yourself and your background for ${roleReference}.`,
       "This tests whether you can connect your experience to the role clearly and briefly.",
       [
         summary
@@ -186,7 +188,7 @@ export function buildInterviewPrep({
     makeQuestion(
       "interest",
       "Opening",
-      `Why are you interested in this ${role} opportunity?`,
+      `Why are you interested in ${roleReference}?`,
       "Interviewers want a specific connection between your goals, the work, and the employer.",
       [
         "Name one responsibility from the listing that genuinely interests you.",
@@ -400,7 +402,7 @@ export function buildInterviewPrep({
   const listingMentionsChannels =
     /\b(email|chat|phone|messaging|inbound|outbound)\b/i.test(jobListing);
   const questionsToAsk = [
-    `What would success look like in the first 90 days for this ${role} role?`,
+    `What would success look like in the first 90 days for ${roleReference}?`,
     "Which results or behaviors matter most when performance is evaluated?",
     "What are the most common challenges the person in this role will handle?",
     "How does this role work with other teams when an issue needs collaboration or escalation?",
