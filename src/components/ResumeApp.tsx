@@ -233,6 +233,83 @@ function InputsStep({
         <p>Match ATS keywords without inventing experience.</p>
       </div>
 
+      <details className="how-to-use" open>
+        <summary>
+          <span className="how-to-title">
+            <ClipboardCheck size={22} strokeWidth={1.7} aria-hidden="true" />
+            <span>
+              <strong>How to use Application Prep Studio</strong>
+              <small>Follow these five steps from résumé to application.</small>
+            </span>
+          </span>
+          <span className="how-to-toggle" aria-hidden="true">
+            Guide
+            <ChevronDown size={18} strokeWidth={1.8} />
+          </span>
+        </summary>
+        <ol className="how-to-steps">
+          <li>
+            <span className="how-to-number">1</span>
+            <div>
+              <strong>Add your résumé</strong>
+              <p>Upload a PDF, DOCX, or TXT file—or paste the résumé text.</p>
+            </div>
+          </li>
+          <li>
+            <span className="how-to-number">2</span>
+            <div>
+              <strong>Add the job</strong>
+              <p>
+                Paste the public job link and tap <b>Import</b>. If it is
+                blocked, paste the description instead.
+              </p>
+            </div>
+          </li>
+          <li>
+            <span className="how-to-number">3</span>
+            <div>
+              <strong>Analyze the match</strong>
+              <p>
+                Tap <b>Analyze match</b> to see matching, transferable, and
+                missing ATS keywords.
+              </p>
+            </div>
+          </li>
+          <li>
+            <span className="how-to-number">4</span>
+            <div>
+              <strong>Create and review</strong>
+              <p>
+                Confirm only skills you can support, then create the tailored
+                résumé and check every line.
+              </p>
+            </div>
+          </li>
+          <li>
+            <span className="how-to-number">5</span>
+            <div>
+              <strong>Prepare, download, and apply</strong>
+              <p>
+                Use Interview Prep, download your résumé, and open the job
+                application to submit it yourself.
+              </p>
+            </div>
+          </li>
+        </ol>
+        <div className="how-to-notes">
+          <p>
+            <ShieldCheck size={17} strokeWidth={1.8} aria-hidden="true" />
+            Missing keywords are included only when you provide truthful
+            evidence.
+          </p>
+          <p>
+            <Download size={17} strokeWidth={1.8} aria-hidden="true" />
+            On iPhone or iPad, downloaded files are usually in the Files app
+            under Downloads.
+          </p>
+        </div>
+      </details>
+
       <div className="input-grid">
         <section className="input-column resume-column">
           <h2>1. Add your résumé</h2>
