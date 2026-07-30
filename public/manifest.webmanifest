@@ -1,0 +1,17 @@
+{
+  "name": "Application Prep Studio",
+  "short_name": "Application Prep",
+  "description": "Private, on-device résumé tailoring and interview preparation.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#168564",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
