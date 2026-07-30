@@ -1,0 +1,6 @@
+node_modules/
+dist/
+.npm-cache/
+public/pdf.worker.min.mjs
+.DS_Store
+*.log
